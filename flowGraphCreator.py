@@ -38,7 +38,7 @@ getIfBlockString(self, tokens):
     	if(token = '}'):
     		parentheses -= 1
     		continue
-        if(withinBlock = True && parentheses != 0 && (token != '{' || token != '}')):
+        if(withinBlock=True && parentheses!=0 && (token!='{' || token!='}')):
         	if(afterIf): ifString += token
         	if(afterElse): elseString += token
         	continue
